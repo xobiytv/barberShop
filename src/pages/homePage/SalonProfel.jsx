@@ -174,7 +174,7 @@ export default function SalonProfel() {
             <b className="text-sm flex justify-center">Nathan</b>
             <p className="text-xs flex justify-center">Sr. Barber</p>
           </div>
-          
+
           <div className="w-1/4 mb-2 profelMasterA bg-[#fafafa] rounded-xl">
             <img
               className="p-3 pb-1 w-full  rounded-2xl"
@@ -184,7 +184,7 @@ export default function SalonProfel() {
             <b className="text-sm flex justify-center">Nathan</b>
             <p className="text-xs flex justify-center">Sr. Barber</p>
           </div>
-          
+
           <div className="w-1/4 mb-2 profelMasterA bg-[#fafafa] rounded-xl">
             <img
               className="p-3 pb-1 w-full  rounded-2xl"
@@ -194,7 +194,7 @@ export default function SalonProfel() {
             <b className="text-sm flex justify-center">Nathan</b>
             <p className="text-xs flex justify-center">Sr. Barber</p>
           </div>
-          
+
           <div className="w-1/4 mb-2 profelMasterA bg-[#fafafa] rounded-xl">
             <img
               className="p-3 pb-1 w-full  rounded-2xl"
@@ -204,13 +204,12 @@ export default function SalonProfel() {
             <b className="text-sm flex justify-center">Nathan</b>
             <p className="text-xs flex justify-center">Sr. Barber</p>
           </div>
-          
-          
         </div>
       </div>
 
       <div>
-        <About/>
+        <About />
+        
       </div>
     </div>
   );

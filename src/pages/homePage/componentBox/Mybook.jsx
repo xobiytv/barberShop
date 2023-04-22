@@ -103,10 +103,10 @@ export default function FixedBottomNavigation(props) {
                 className="flex
               justify-between w-full"
               >
-                <div className="w-2/6">
+                <div className="w-2/6 mr-2">
                   <ListItemAvatar>
                     <img
-                      className="w-24 h-24 mr-1 rounded-2xl"
+                      className="w-24 h-24 rounded-2xl"
                       src={message.person}
                       alt="Profile Picture"
                     />
@@ -118,7 +118,7 @@ export default function FixedBottomNavigation(props) {
                     primary={message.primary}
                     secondary={message.secondary}
                   />
-                  <div className="flex gap-3 justify-start">
+                  <div className="flex m gap-3 justify-start">
                     <p>
                       {message.iconA}
                       {message.km} km

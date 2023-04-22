@@ -219,7 +219,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* <Nav /> */}
+        {/* <Nav />  */}
         <Mybook />
       </section>
       {/* <Footer/> */}

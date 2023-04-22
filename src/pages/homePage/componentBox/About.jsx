@@ -62,15 +62,7 @@ function About(props) {
           {/* <GeolocationControl options={{ float: "left" }} /> */}
         </YMaps>
       </div>
-      <div>
-        <button
-          variant="primary"
-          type="Submit"
-          className="bg-[#FB9400] w-full mt-5 text-center rounded-2xl text-white text-xl py-2 hover:scale-105 duration-300"
-        >
-          Book New
-        </button>
-      </div>
+    
     </div>
   );
 }
