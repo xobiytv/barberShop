@@ -3,12 +3,19 @@ import { UserAuth } from "../../context/AuthContext";
 import SearchIcon from "@mui/icons-material/Search";
 // import Slider from "slick-carousel@1.8.1/slick/slick.css";
 import Slider from "react-slick";
-import PollIcon from "@mui/icons-material/Poll";
+// import PollIcon from "@mui/icons-material/Poll";
 import { Link } from "react-router-dom";
-import CoffeeMakerIcon from '@mui/icons-material/CoffeeMaker';
-import NoEncryptionGmailerrorredOutlinedIcon from "@mui/icons-material/NoEncryptionGmailerrorredOutlined";
-import SendTimeExtensionOutlinedIcon from "@mui/icons-material/SendTimeExtensionOutlined";
+// import CoffeeMakerIcon from '@mui/icons-material/CoffeeMaker';
+// import NoEncryptionGmailerrorredOutlinedIcon from "@mui/icons-material/NoEncryptionGmailerrorredOutlined";
+// import SendTimeExtensionOutlinedIcon from "@mui/icons-material/SendTimeExtensionOutlined";
 import Mybook from './componentBox/Mybook'
+// import Nav from './componentBox/Nav'
+import Navbar from './Navbar'
+import CleanHandsIcon from "@mui/icons-material/CleanHands";
+import Face3Icon from "@mui/icons-material/Face3";
+import SignLanguageIcon from '@mui/icons-material/SignLanguage';
+import Face6Icon from "@mui/icons-material/Face6";
+// import Footer from './Footer'
 
 export default function Home() {
   const { user } = UserAuth();
@@ -21,7 +28,8 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="w-full">
+      <Navbar />
       <header>
         <div className=" flex justify-center w-full">
           <h1 className="font-bold grid-cols-1  mt-4  text-2xl text-[#000000]">
@@ -34,7 +42,7 @@ export default function Home() {
             {/* <i></i> */}
             <input
               type="text"
-              placeholder="username"
+              placeholder="Search..."
               className="pl-10 w-80 pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
             />
           </div>
@@ -149,8 +157,11 @@ export default function Home() {
           <ul className="flex justify-between mb-4">
             <li className=" ">
               <Link className="m-0 text-center" to={"/haircuts"}>
-                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FB9400] items-center  flex justify-center ">
-                  <PollIcon color="action" sx={{ fontSize: 40 }} />
+                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FDF1DF] items-center  flex justify-center ">
+                  <Face6Icon
+                    color="action"
+                    sx={{ fontSize: 37, color: "#FB9400 " }}
+                  />
                 </div>
                 <br />
                 <b className="text-center">Haircuts</b>
@@ -158,19 +169,22 @@ export default function Home() {
             </li>
             <li className=" ">
               <Link className="m-0 text-center" to={"/makeup"}>
-                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FB9400] items-center  flex justify-center ">
-                  <CoffeeMakerIcon color="action" sx={{ fontSize: 40 }} />
+                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FDF1DF] items-center  flex justify-center ">
+                  <SignLanguageIcon
+                    color="action"
+                    sx={{ fontSize: 37, color: "#FB9400 " }}
+                  />
                 </div>
                 <br />
                 <b className="text-center">Make UP</b>
               </Link>
             </li>
             <li className=" ">
-              <Link className="m-0 text-center" to={"/maicure"}>
-                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FB9400] items-center  flex justify-center ">
-                  <NoEncryptionGmailerrorredOutlinedIcon
+              <Link className="m-0 text-center" to={"/manicure"}>
+                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FDF1DF] items-center  flex justify-center ">
+                  <CleanHandsIcon
                     color="action"
-                    sx={{ fontSize: 40 }}
+                    sx={{ fontSize: 37, color: "#FB9400 " }}
                   />
                 </div>
                 <br />
@@ -178,11 +192,12 @@ export default function Home() {
               </Link>
             </li>
             <li className=" ">
-              <Link className="m-0 text-center" to={"/ukaladki"}>
-                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FB9400] items-center  flex justify-center ">
-                  <SendTimeExtensionOutlinedIcon
+              <Link className="m-0 text-center" to={"/ucaladki"}>
+                <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FDF1DF] items-center  flex justify-center ">
+                  <Face3Icon
                     color="action"
-                    sx={{ fontSize: 40 }}
+                    // sx={{ color: "#FB9400 " }}
+                    sx={{ fontSize: 37, color: "#FB9400 " }}
                   />
                 </div>
                 <br />
@@ -192,11 +207,22 @@ export default function Home() {
           </ul>
           <hr />
         </div>
+        
       </header>
       <section>
-        
+        <div className="ml-5 mt-5 mb-5 mr-4">
+          <div className="flex justify-between ">
+            <b className="text-xl">Nearby Your Location</b>
+
+            <Link to={"/logUp"} className=" text-[#FB9400] ">
+              <b>See All</b>
+            </Link>
+          </div>
+        </div>
+        {/* <Nav /> */}
         <Mybook />
       </section>
+      {/* <Footer/> */}
     </div>
   );
 }

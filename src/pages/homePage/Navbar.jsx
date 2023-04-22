@@ -5,6 +5,8 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Badge from "@mui/material/Badge";
+import { Link } from "react-router-dom";
+
 // import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -26,9 +28,8 @@ export default function Navbars() {
     };
   return (
     <Box sx={{ flexGrow: 1 }} color="none">
-
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar className="bg-[#FB9400]">
           <IconButton
             size="large"
             aria-label="show 17 new notifications"
@@ -48,14 +49,14 @@ export default function Navbars() {
           </Typography>
           {/* xs: "none" */}
           <Box sx={{ flexGrow: 1 }} />
-          
+
           <Box sx={{ display: { md: "flex" } }}>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge onClick={handleSignOut}  color="error">
+              <Badge onClick={handleSignOut} color="error">
                 <KeyboardReturnIcon />
               </Badge>
             </IconButton>
@@ -64,18 +65,18 @@ export default function Navbars() {
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
+              <Link to={"/beli"} badgeContent={17} color="error">
                 <NotificationsIcon />
-              </Badge>
+              </Link>
             </IconButton>
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
+              <Link to={"/mybookmark"} badgeContent={17} color="error">
                 <BookmarkIcon />
-              </Badge>
+              </Link>
             </IconButton>
           </Box>
         </Toolbar>

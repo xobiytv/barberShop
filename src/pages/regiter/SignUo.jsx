@@ -48,7 +48,11 @@ const SignUp = () => {
           <div className="md:w-1/2 px-8 md:px-16">
             <h2 className="font-bold mt-5 flex  text-3xl text-[#000000]">
               <Link className="pl-0 m-0" to={"/logIn"}>
-                <Icon size={"40px"} icon={ic_keyboard_backspace} />
+                <Icon
+                  className="mr-3"
+                  size={"40px"}
+                  icon={ic_keyboard_backspace}
+                />
               </Link>
               Fill your profile
             </h2>
@@ -127,15 +131,14 @@ const SignUp = () => {
                 </option>
               </select> */}
 
-              
-                <button
-                  variant="primary"
-                  type="submit"
-                  class="bg-[#FB9400] text-center rounded-xl text-white py-2 hover:scale-105 duration-300"
-                >
-                  Sign up
-                </button>
-              
+              <button
+                variant="primary"
+                type="submit"
+                className="bg-[#FB9400] text-center rounded-xl text-white py-2 hover:scale-105 duration-300"
+              >
+                Sign up
+              </button>
+
               {/* <button  >
                 
               </button> */}

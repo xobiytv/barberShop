@@ -1,11 +1,3 @@
-// Import the functions you need from the SDKs you need
-
-
-
-
-
-
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -18,7 +10,7 @@ const firebaseConfig = {
   projectId: "general-salon",
   storageBucket: "general-salon.appspot.com",
   messagingSenderId: "875128624511",
-  appId: "1:875128624511:web:856cb9ffa65e631088764a"
+  appId: "1:875128624511:web:856cb9ffa65e631088764a",
 };
 
 // Initialize Firebase
