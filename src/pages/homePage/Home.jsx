@@ -36,19 +36,19 @@ export default function Home() {
             Morning, {user?.displayName} 👋
           </h1>
         </div>
-        <form class="flex flex-col  mt-5 w-96 justify-start items-center ">
-          <div class="relative border ">
+        <form class="flex flex-col  mt-5 w-full justify-start items-center ">
+          <div class="relative border  w-80">
             <SearchIcon className="fa fa-user ml-2 mt-3 absolute text-primarycolor text-xl" />
             {/* <i></i> */}
             <input
               type="text"
               placeholder="Search..."
-              className="pl-10 w-80 pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
+              className="pl-10 w-full    l pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
             />
           </div>
         </form>
 
-        <div className="bg-[#FB9400] h-52 ml-8 mr-8 mt-8 rounded-2xl">
+        <div className="bg-[#FB9400] h-52 ml-4 mr-4 mt-8 rounded-2xl">
           <Slider className="bg-[#FB9400] rounded-2xl" {...settings}>
             <div>
               <div>
@@ -153,7 +153,7 @@ export default function Home() {
           </Slider>
         </div>
 
-        <div className="ml-8 mr-8 ">
+        <div className="ml-4 mr-4 ">
           <ul className="flex justify-between mb-4">
             <li className=" ">
               <Link className="m-0 text-center" to={"/haircuts"}>
@@ -207,7 +207,6 @@ export default function Home() {
           </ul>
           <hr />
         </div>
-        
       </header>
       <section>
         <div className="ml-5 mt-5 mb-5 mr-4">

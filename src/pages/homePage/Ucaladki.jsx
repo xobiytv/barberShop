@@ -17,14 +17,14 @@ export default function Haircuts() {
           Ucaladki
         </h3>
       </div>
-      <form class="flex flex-col mb-5 mt-5 w-96 justify-start items-center ">
-        <div class="relative border ">
+      <form class="flex flex-col  mt-5 mb-5 w-full justify-start items-center ">
+        <div class="relative border  w-80">
           <SearchIcon className="fa fa-user ml-2 mt-3 absolute text-primarycolor text-xl" />
           {/* <i></i> */}
           <input
             type="text"
             placeholder="Search..."
-            className="pl-10 w-80 pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
+            className="pl-10 w-full    l pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
           />
         </div>
       </form>

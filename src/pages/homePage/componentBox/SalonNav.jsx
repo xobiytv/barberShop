@@ -21,8 +21,19 @@ export default function LabTabs() {
   return (
     <Box sx={{ width: "100%", typography: "body1" }}>
       <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
+        <Box
+          sx={{ borderBottom: 1, borderColor: "#FB9400", textColor: "#FB9400" }}
+        >
+          <TabList
+            onChange={handleChange}
+            value={value}
+            variant="scrollable"
+            scrollButtons="auto"
+            textColor="inherit"
+            indicatorColor="secondary"
+            // sx={{ textColor: "#FB9400", indicatorColor: "#FB9400" }}
+            aria-label="scrollable auto tabs example"
+          >
             <Tab label="Abut us" value="1" />
             <Tab label="Services" value="2" />
             <Tab label="Package" value="3" />
@@ -42,7 +53,9 @@ export default function LabTabs() {
         <TabPanel value="4">
           <Gallery />
         </TabPanel>
-        <TabPanel value="5"><Review/></TabPanel>
+        <TabPanel value="5">
+          <Review />
+        </TabPanel>
       </TabContext>
       <ProfelNav />
     </Box>
