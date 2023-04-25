@@ -20,6 +20,8 @@ import Manicure from "./pages/homePage/Manucure";
 import Makeup from "./pages/homePage/Makeup";
 import Ucaladki from "./pages/homePage/Ucaladki";
 import SalonProfel from './pages/homePage/SalonProfel';
+import OurSerice from "./pages/homePage/componentBox/SalonProfel/OurService";
+import BookApply from "./pages/homePage/componentBox/SalonProfel/BookApply";
 
 function App() {
   useEffect(() => {
@@ -46,6 +48,8 @@ function App() {
           <Route path="/makeup" element={<Makeup />} />
           <Route path="/ucaladki" element={<Ucaladki />} />
           <Route path="/salonprofel" element={<SalonProfel />} />
+          <Route path="/ourserice" element={<OurSerice />} />
+          <Route path="/bookApply" element={<BookApply />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route
