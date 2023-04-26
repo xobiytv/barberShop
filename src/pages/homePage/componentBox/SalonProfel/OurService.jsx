@@ -57,7 +57,7 @@ export default function BasicTabs() {
     <Box sx={{ width: "100%" }}>
       <div>
         <h1 className="font-bold grid-cols-1  m-5 text-3xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/"}>
+          <Link className="pl-0 m-0" to={"/salonprofel"}>
             <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
           </Link>
           Haircuts
@@ -80,7 +80,7 @@ export default function BasicTabs() {
         <Women />
       </TabPanel>
 
-      <ServerNav/>
+      <ServerNav />
     </Box>
   );
 }

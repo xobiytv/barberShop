@@ -3,17 +3,34 @@ import { ic_keyboard_backspace } from "react-icons-kit/md/ic_keyboard_backspace"
 import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
 import Paper from "@mui/material/Paper";
+import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
-
+import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
+// import Box from "@mui/material/Box";
+// import BottomNavigation from "@mui/material/BottomNavigation";
+// import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+// import RestoreIcon from "@mui/icons-material/Restore";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
+// import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
 
 export default function BookApply() {
+   const middleDate = dayjs(new Date().setMonth(6));
+// const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState('one');
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <div>
       <div>
         <h1 className="font-bold grid-cols-1  m-5 text-2xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/"}>
+          <Link className="pl-0 m-0" to={"/ourserice"}>
             <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
           </Link>
           Book Appointerment
@@ -23,7 +40,7 @@ export default function BookApply() {
         <div>
           <b className="text-xl">Select Data</b>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar />
+            <StaticDatePicker minDate={middleDate} />
           </LocalizationProvider>
         </div>
         <div className="flex justify-between ">
@@ -33,9 +50,41 @@ export default function BookApply() {
             <b>See All</b>
           </Link>
         </div>
+        {/* <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <BottomNavigationAction label="9:00" />
+          <BottomNavigationAction label="10:00" />
+          <BottomNavigationAction label="11:00" />
+          <BottomNavigationAction label="12:00" />
+          <BottomNavigationAction label="13:00" />
+          <BottomNavigationAction label="14:00" />
+        </BottomNavigation> */}
+        <Box sx={{ width: "100%" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            variant="scrollable"
+            scrollButtons="auto"
+            aria-label="scrollable auto tabs example"
+          >
+            <Tab label="8:00" />
+            <Tab label="9:00" />
+            <Tab label="10:00" />
+            <Tab label="11:00" />
+            <Tab label="12:00" />
+            <Tab label="13:00" />
+            <Tab label="14:00" />
+            <Tab label="15:00" />
+          </Tabs>
+        </Box>
 
         <div className="">
-          <div className="flex justify-between mb-3">
+          <div className="flex justify-between mb-5">
             <b className="text-xl">Select Specialist</b>
 
             <Link to={"/logUp"} className=" text-[#FB9400] ">
@@ -43,7 +92,7 @@ export default function BookApply() {
             </Link>
           </div>
 
-          <div className="profelMaster gap-1 flex">
+          <div className="profelMaster gap-1 mb-24 flex">
             <div className="w-1/4 mb-2 profelMasterA bg-[#fafafa] rounded-xl">
               <img
                 className="p-3 pb-1 w-full  rounded-2xl"
@@ -98,12 +147,12 @@ export default function BookApply() {
       >
         <div className="ml-5 mr-5 mb-5 bg-none">
           <Link
-            to={"/bookApply"}
+            to={"/paymentmethods"}
             variant="primary"
             type="Submit"
             className="bg-[#FB9400] w-full mt-5 text-center rounded-3xl text-white text-xl py-2 hover:scale-105 duration-300"
           >
-            Apply
+            Continue
           </Link>
         </div>
       </Paper>

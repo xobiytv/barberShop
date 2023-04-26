@@ -22,6 +22,7 @@ import Ucaladki from "./pages/homePage/Ucaladki";
 import SalonProfel from './pages/homePage/SalonProfel';
 import OurSerice from "./pages/homePage/componentBox/SalonProfel/OurService";
 import BookApply from "./pages/homePage/componentBox/SalonProfel/BookApply";
+import Metods from "./pages/payment/Metods";
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/beli" element={<Beli />} />
           <Route path="/logIn" element={<LogIn />} />
           <Route path="/logUp" element={<SignUp />} />
+          <Route path="/sigin" element={<Signin />} />
           {/* <Route path="/profel" element={<Profel />} /> */}
           <Route path="/mybookmark" element={<MyBookmark />} />
           {/* <Route path="/test" element={<Test />} /> */}
@@ -50,6 +52,7 @@ function App() {
           <Route path="/salonprofel" element={<SalonProfel />} />
           <Route path="/ourserice" element={<OurSerice />} />
           <Route path="/bookApply" element={<BookApply />} />
+          <Route path="/paymentmethods" element={<Metods />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route

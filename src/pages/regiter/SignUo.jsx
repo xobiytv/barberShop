@@ -4,7 +4,7 @@ import { UserAuth } from "../../context/AuthContext";
 // import { LogIn } from "../regiter/LogIn";
 // import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
-// import { pencil } from "react-icons-kit/fa/pencil";
+import { pencil } from "react-icons-kit/fa/pencil";
 import { ic_keyboard_backspace } from "react-icons-kit/md/ic_keyboard_backspace";
 // import Avtar from "../../components/img/user_avatar.png";
 // import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
@@ -13,30 +13,29 @@ import { Link, useNavigate } from "react-router-dom";
 // import { Button } from "react-bootstrap";
 // import { useUserAuth } from "../context/UserAuthContext";
 
-
 const SignUp = () => {
   // email
-    // const [fullName, setFullName] = useState("");
-    const [email, setEmail] = useState("");
-    // const [data, setData] = useState("");
-    // const [number, setNumber] = useState("");
-    const [error, setError] = useState("");
-    const [password, setPassword] = useState("");
-    // const [gender, setGender] = useState("");
-    const { signUp } = UserAuth();
-    let navigate = useNavigate();
+  // const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  // const [data, setData] = useState("");
+  // const [number, setNumber] = useState("");
+  const [error, setError] = useState("");
+  const [password, setPassword] = useState("");
+  // const [gender, setGender] = useState("");
+  const { signUp } = UserAuth();
+  let navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setError("");
-      try {
-        await signUp( email, password);
-        navigate("/logIn");
-      } catch (err) {
-        setError(err.message);console.log(err);
-      }
-    };
-
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await signUp(email, password);
+      navigate("/logIn");
+    } catch (err) {
+      setError(err.message);
+      console.log(err);
+    }
+  };
 
   return (
     <div>
@@ -45,7 +44,7 @@ const SignUp = () => {
 
         <div className=" flex rounded-2xl shadow-lg max-w-5xl p-5 items-center">
           {/* <!-- form --> */}
-          <div className="md:w-1/2 px-8 md:px-16">
+          <div className="md:w-1/2 px-8 text-xl md:px-16">
             <h2 className="font-bold mt-5 flex  text-3xl text-[#000000]">
               <Link className="pl-0 m-0" to={"/logIn"}>
                 <Icon
@@ -63,37 +62,46 @@ const SignUp = () => {
               action=""
               className="flex  flex-col  gap-4"
             >
-              {/* <div className="w-32 translate-x-1/2    flex  rounded-xl  ">
+              <div className="w-32 translate-x-1/2    flex  rounded-xl  ">
                 <img
                   className="w-full object-cover rounded-full"
-                  src="../../components/img/user_avatar.png"
+                  src="https://www.citypng.com/public/uploads/preview/download-profile-user-round-orange-icon-symbol-png-11639594360ksf6tlhukf.png"
                   alt="Avatar Upload"
                 />
-                <label className="cursor-pointer translate-y-20 ">
+                <label className="cursor-pointer translate-y-24 ">
                   <span
                     style={{ color: "#fff" }}
-                    className="focus:outline-none  bg-[#FB9400] rounded-xl  justify-end   py-2 px-2  hover:shadow-lg"
+                    className="focus:outline-none  bg-[#FB9400] rounded-xl  justify-end   py-1 px-2  hover:shadow-lg"
                   >
                     <Icon size={"100%"} icon={pencil} />
                   </span>
                   <input type="file" className="hidden" />
                 </label>
-              </div> */}
+              </div>
 
-              {/* <input
+              <div>
+                
+              </div>
+              <input
                 className="p-2 mt-3 rounded-xl border"
                 type="text"
                 name="name"
                 placeholder="Full name"
-                onChange={(e) => setFullName(e.target.value)}
+                // onChange={(e) => setFullName(e.target.value)}
               />
 
               <input
-                className="p-2 rounded-xl border"
+                className="p-2 rounded-xl border w-full"
+                type="text"
+                name="user_name"
+                placeholder="User name"
+                // onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                className="p-2 rounded-xl border w-full"
                 type="date"
                 name="data"
                 placeholder="Data"
-                onChange={(e) => setData(e.target.value)}
               />
 
               <input
@@ -101,27 +109,21 @@ const SignUp = () => {
                 type="number"
                 name="number"
                 placeholder="Phone number"
-                onChange={(e) => setNumber(e.target.value)}
-              /> */}
-              <input
-                className="p-2 rounded-xl border w-full"
-                type="text"
-                name="user_name"
-                placeholder="User name"
-                onChange={(e) => setEmail(e.target.value)}
+                // onChange={(e) => setNumber(e.target.value)}
               />
+
               <input
                 className="p-2  rounded-xl border"
                 type="password"
                 name="password"
                 placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
+                // onChange={(e) => setPassword(e.target.value)}
               />
-              {/* <select
+              <select
                 name="gender"
                 className="p-2  rounded-xl border"
                 id="inputAdult"
-                onChange={(e) => setGender(e.target.value)}
+                // onChange={(e) => setGender(e.target.value)}
               >
                 <option name="" value="" selected="">
                   Male
@@ -129,7 +131,7 @@ const SignUp = () => {
                 <option name="en" value="Ingliz tili">
                   Giol
                 </option>
-              </select> */}
+              </select>
 
               <button
                 variant="primary"
@@ -156,5 +158,5 @@ const SignUp = () => {
       </section>
     </div>
   );
-            }
+};
 export default SignUp;

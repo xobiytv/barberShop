@@ -77,7 +77,7 @@ export default function SalonProfel() {
           </div>
           <div className="flex w-1/6 justify-end">
             <Link
-              to={"/salonprofel"}
+              to={"/bookApply"}
               className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
             >
@@ -209,7 +209,6 @@ export default function SalonProfel() {
 
       <div>
         <About />
-        
       </div>
     </div>
   );

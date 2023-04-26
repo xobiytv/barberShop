@@ -56,9 +56,12 @@ export default function Navbars() {
               aria-label="show 17 new notifications"
               color="inherit"
             >
-              <Badge onClick={handleSignOut} color="error">
+              <Link to={"/sigin"}>
                 <KeyboardReturnIcon />
-              </Badge>
+              </Link>
+              {/* <Badge onClick={handleSignOut} color="error">
+                
+              </Badge> */}
             </IconButton>
             <IconButton
               size="large"

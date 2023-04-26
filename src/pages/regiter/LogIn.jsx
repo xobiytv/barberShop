@@ -68,9 +68,9 @@ export default function () {
             <Link className="pl-0 m-0" to={"/"}>
               <Icon size={"30px"} icon={ic_keyboard_backspace} />
             </Link>
-            <h1 className="font-bold text-center text-4xl text-[#000000]">
+            <h2 className="font-bold text-center text-3xl text-[#000000]">
               Create your Account
-            </h1>
+            </h2>
             {/* <p className="text-xs mt-4 text-[#002D74]">If you are already a member, easily log in</p> */}
 
             <form
