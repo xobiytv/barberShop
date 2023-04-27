@@ -182,7 +182,7 @@ export default function Metods() {
       >
         <div className="ml-4 mr-4 mb-5 bg-none">
           <Link
-            to={"/"}
+            to={"/chake"}
             variant="primary"
             type="Submit"
             className="bg-[#FB9400] w-full mt-5 text-center rounded-3xl text-white text-xl py-2 hover:scale-105 duration-300"

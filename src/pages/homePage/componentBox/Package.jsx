@@ -29,7 +29,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -57,7 +57,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -85,7 +85,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -113,7 +113,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -141,7 +141,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -169,7 +169,7 @@ export default function Package() {
             <div className="flex justify-between mt-2">
               <p className="text-xl text-[#FB9400]">$128</p>
               <Link
-                to={"/salonprofel"}
+                to={"/pacageprofel"}
                 className="bg-[#FB9400] h-9 pl-5 pr-5 pt-1 pb-1 text-center rounded-3xl text-white py-2
                   hover:scale-105 duration-300"
               >
@@ -180,7 +180,6 @@ export default function Package() {
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );

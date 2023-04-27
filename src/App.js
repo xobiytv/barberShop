@@ -23,6 +23,8 @@ import SalonProfel from './pages/homePage/SalonProfel';
 import OurSerice from "./pages/homePage/componentBox/SalonProfel/OurService";
 import BookApply from "./pages/homePage/componentBox/SalonProfel/BookApply";
 import Metods from "./pages/payment/Metods";
+import Chake from "./pages/payment/Chake";
+import PacageProfel from './pages/homePage/componentBox/SalonProfel/PacageProfel'
 
 function App() {
   useEffect(() => {
@@ -53,6 +55,8 @@ function App() {
           <Route path="/ourserice" element={<OurSerice />} />
           <Route path="/bookApply" element={<BookApply />} />
           <Route path="/paymentmethods" element={<Metods />} />
+          <Route path="/chake" element={<Chake />} />
+          <Route path="/pacageprofel" element={<PacageProfel />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route
