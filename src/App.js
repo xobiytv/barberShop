@@ -25,6 +25,9 @@ import BookApply from "./pages/homePage/componentBox/SalonProfel/BookApply";
 import Metods from "./pages/payment/Metods";
 import Chake from "./pages/payment/Chake";
 import PacageProfel from './pages/homePage/componentBox/SalonProfel/PacageProfel'
+import Message from "./pages/homePage/componentBox/SalonProfel/Message";
+import Call from "./pages/homePage/componentBox/SalonProfel/Call";
+import Share from "./pages/homePage/componentBox/SalonProfel/Share";
 
 function App() {
   useEffect(() => {
@@ -57,6 +60,9 @@ function App() {
           <Route path="/paymentmethods" element={<Metods />} />
           <Route path="/chake" element={<Chake />} />
           <Route path="/pacageprofel" element={<PacageProfel />} />
+          <Route path="/message" element={<Message />} />
+          <Route path="/call" element={<Call />} />
+          <Route path="/share" element={<Share />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route

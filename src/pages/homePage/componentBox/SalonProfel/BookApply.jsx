@@ -30,7 +30,7 @@ export default function BookApply() {
     <div>
       <div>
         <h1 className="font-bold grid-cols-1  m-5 text-2xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/ourserice"}>
+          <Link className="pl-0 m-0" to={"/salonprofel"}>
             <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
           </Link>
           Book Appointerment
