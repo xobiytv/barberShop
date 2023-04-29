@@ -219,7 +219,7 @@ export default function SalonProfel(props) {
         <div className="flex justify-between ">
           <b className="text-xl">Our Sprcialist</b>
 
-          <Link to={"/logUp"} className=" text-[#FB9400] ">
+          <Link to={"/salonmessage"} className=" text-[#FB9400] ">
             <b>See All</b>
           </Link>
         </div>
@@ -267,7 +267,7 @@ export default function SalonProfel(props) {
         </div>
       </div>
       <SwipeableDrawer
-         container={container}
+        container={container}
         anchor="top"
         open={open}
         onClose={toggleDrawer(false)}
@@ -275,7 +275,8 @@ export default function SalonProfel(props) {
         swipeAreaWidth={drawerBleeding}
         disableSwipeToOpen={false}
         ModalProps={{
-          keepMounted: true,}}
+          keepMounted: true,
+        }}
       >
         <StyledBox
           sx={{

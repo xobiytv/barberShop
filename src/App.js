@@ -28,6 +28,7 @@ import PacageProfel from './pages/homePage/componentBox/SalonProfel/PacageProfel
 import Message from "./pages/homePage/componentBox/SalonProfel/Message";
 import Call from "./pages/homePage/componentBox/SalonProfel/Call";
 import Share from "./pages/homePage/componentBox/SalonProfel/Share";
+import SalonMessage from "./pages/homePage/componentBox/SalonProfel/SalonMessage";
 
 function App() {
   useEffect(() => {
@@ -63,6 +64,7 @@ function App() {
           <Route path="/message" element={<Message />} />
           <Route path="/call" element={<Call />} />
           <Route path="/share" element={<Share />} />
+          <Route path="/salonmessage" element={<SalonMessage />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route
