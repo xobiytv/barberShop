@@ -30,6 +30,7 @@ import Call from "./pages/homePage/componentBox/SalonProfel/Call";
 import Share from "./pages/homePage/componentBox/SalonProfel/Share";
 import SalonMessage from "./pages/homePage/componentBox/SalonProfel/SalonMessage";
 import Profel from "./pages/profil/Profel";
+import Explore from "./pages/explore/Explore";
 
 function App() {
   useEffect(() => {
@@ -66,7 +67,8 @@ function App() {
           <Route path="/call" element={<Call />} />
           <Route path="/share" element={<Share />} />
           <Route path="/salonmessage" element={<SalonMessage />} />
-          <Route path="/profel" element={<Prodel />} />
+          <Route path="/profel" element={<Profel />} />
+          <Route path="/explore" element={<Explore />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route
