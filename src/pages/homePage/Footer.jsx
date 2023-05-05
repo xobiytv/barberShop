@@ -27,7 +27,7 @@ export default function Footer() {
         <Link to={"/explore"} label="Explore">
           <LocationOnIcon sx={{ fontSize: 25, color: "#FB9400 " }} />
         </Link>
-        <Link to={"/mybookmark"} label="Booking">
+        <Link to={"/mybooking"} label="Booking">
           <LibraryBooksIcon sx={{ fontSize: 25, color: "#FB9400 " }} />
         </Link>
         <Link to={"/inbox"} label="Inbox">

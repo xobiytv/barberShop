@@ -32,6 +32,7 @@ import SalonMessage from "./pages/homePage/componentBox/SalonProfel/SalonMessage
 import Profel from "./pages/profil/Profel";
 import Explore from "./pages/explore/Explore";
 import Inbox from './pages/inbox/Inbox';
+import MyBooking from "./pages/mybooking/MyBooking";
 
 function App() {
   useEffect(() => {
@@ -71,6 +72,7 @@ function App() {
           <Route path="/profel" element={<Profel />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/inbox" element={<Inbox />} />
+          <Route path="/mybooking" element={<MyBooking />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route
