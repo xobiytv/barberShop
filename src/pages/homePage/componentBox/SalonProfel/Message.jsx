@@ -50,7 +50,7 @@ export default function Message() {
     <div>
       <div className="flex justify-between items-center mr-3 ">
         <h1 className="font-bold items-center flex grid-cols-1 gap-2  m-5 text-xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/salonprofel"}>
+          <Link className="pl-0 m-0" to={"/"}>
             <Icon className="mr-3" size={"30px"} icon={ic_keyboard_backspace} />
           </Link>
           <Stack direction="row" spacing={2}>

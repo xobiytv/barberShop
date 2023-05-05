@@ -16,7 +16,7 @@ export default function Call() {
     <div>
       <div className="flex justify-between content-center  items-center mr-3CallIcon">
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/salonprofel "}>
+          <Link className="pl-0 m-0" to={"/ "}>
             <Icon className="mr-3" size={"30px"} icon={ic_keyboard_backspace} />
           </Link>
         </h1>
