@@ -62,21 +62,22 @@ export default function () {
       <section className=" min-h-screen flex items-center justify-center">
         {/* <!-- login container --> */}
 
-        <div className=" flex rounded-2xl shadow-lg max-w-5xl p-5 items-center">
+        <div className=" flex rounded-2xl  max-w-5xl p-5 items-center">
           {/* <!-- form --> */}
           <div className="md:w-1/2 px-8 md:px-16">
             <Link className="pl-0 m-0" to={"/"}>
               <Icon size={"30px"} icon={ic_keyboard_backspace} />
             </Link>
-            <h2 className="font-bold text-center text-3xl text-[#000000]">
+            <h2 className="font-bold mt-7 text-start text-4xl text-[#000000]">
               Create your Account
             </h2>
+            
             {/* <p className="text-xs mt-4 text-[#002D74]">If you are already a member, easily log in</p> */}
 
             <form
               onSubmit={handleSubmit}
               action=""
-              className="flex flex-col mt-7 gap-4"
+              className="flex flex-col mt-4 gap-4"
             >
               {/* {error && <Alert variant="danger">{error}</Alert>} */}
               <input

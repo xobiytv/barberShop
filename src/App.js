@@ -33,6 +33,13 @@ import Profel from "./pages/profil/Profel";
 import Explore from "./pages/explore/Explore";
 import Inbox from './pages/inbox/Inbox';
 import MyBooking from "./pages/mybooking/MyBooking";
+// import InviteFriends from "./pages/profil/InviteFrends";
+import EditProfel from "./pages/profil/EditProfrl";
+import Notification from "./pages/profil/Notification";
+import Security from "./pages/profil/Security";
+import Language from "./pages/profil/Language";
+import PrivacyPolicy from "./pages/profil/PrivacyPolicy";
+import InviteFriends from "./pages/profil/InviteFrends";
 
 function App() {
   useEffect(() => {
@@ -73,6 +80,13 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/mybooking" element={<MyBooking />} />
+          {/* <Route path="/invitefriends" element={<InviteFriends />} /> */}
+          <Route path="/editprofel" element={<EditProfel />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/language" element={<Language />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/invitefriends" element={<InviteFriends />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route

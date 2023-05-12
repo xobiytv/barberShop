@@ -29,7 +29,7 @@ const Signin = () => {
       <section className=" min-h-screen flex items-center justify-center">
         {/* <!-- login container --> */}
 
-        <div className=" flex rounded-2xl shadow-lg max-w-5xl p-5 items-center">
+        <div className=" flex rounded-2xl  max-w-5xl p-5 items-center">
           {/* <!-- form --> */}
           <div className="md:w-1/2 px-8 md:px-16">
             <div className=" mb-7 ">

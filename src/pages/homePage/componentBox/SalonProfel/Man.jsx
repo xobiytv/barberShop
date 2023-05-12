@@ -2,8 +2,7 @@ import React from 'react'
 import Radio from "@mui/material/Radio";
 
 
-export default function 
-() {
+export default function Man() {
   const [selectedValue, setSelectedValue] = React.useState("a");
 
   const handleChange = (event) => {

@@ -42,19 +42,22 @@ const SignUp = () => {
       <section className=" min-h-screen flex items-center justify-center">
         {/* <!-- login container --> */}
 
-        <div className=" flex rounded-2xl shadow-lg max-w-5xl p-5 items-center">
+        <div className=" flex rounded-2xl   items-center">
           {/* <!-- form --> */}
-          <div className="md:w-1/2 px-8 text-xl md:px-16">
-            <h2 className="font-bold mt-5 flex  text-3xl text-[#000000]">
-              <Link className="pl-0 m-0" to={"/logIn"}>
-                <Icon
-                  className="mr-3"
-                  size={"40px"}
-                  icon={ic_keyboard_backspace}
-                />
-              </Link>
-              Fill your profile
-            </h2>
+          <div className="md:w-1/2 text-xl ">
+           
+            <div className="flex justify-start content-start  items-center mr-3CallIcon">
+              <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
+                <Link className="pl-0 m-0" to={"/logIn "}>
+                  <Icon
+                    className="mr-4"
+                    size={"30px"}
+                    icon={ic_keyboard_backspace}
+                  />
+                  Fill your profile
+                </Link>
+              </h1>
+            </div>
             {/* <p className="text-xs mt-4 text-[#002D74]">If you are already a member, easily log in</p> */}
             {/* {error && <Alert variant="danger">{error}</Alert>} */}
             <form
@@ -62,26 +65,26 @@ const SignUp = () => {
               action=""
               className="flex  flex-col  gap-4"
             >
-              <div className="w-32 translate-x-1/2    flex  rounded-xl  ">
-                <img
-                  className="w-full object-cover rounded-full"
-                  src="https://www.citypng.com/public/uploads/preview/download-profile-user-round-orange-icon-symbol-png-11639594360ksf6tlhukf.png"
-                  alt="Avatar Upload"
-                />
-                <label className="cursor-pointer translate-y-24 ">
-                  <span
-                    style={{ color: "#fff" }}
-                    className="focus:outline-none  bg-[#FB9400] rounded-xl  justify-end   py-1 px-2  hover:shadow-lg"
-                  >
-                    <Icon size={"100%"} icon={pencil} />
-                  </span>
-                  <input type="file" className="hidden" />
-                </label>
+              <div className="flex justify-center">
+                <div className="w-32    flex  rounded-xl  ">
+                  <img
+                    className="w-full object-cover rounded-full"
+                    src="https://www.citypng.com/public/uploads/preview/download-profile-user-round-orange-icon-symbol-png-11639594360ksf6tlhukf.png"
+                    alt="Avatar Upload"
+                  />
+                  <label className="cursor-pointer translate-y-24 ">
+                    <span
+                      style={{ color: "#fff" }}
+                      className="focus:outline-none  bg-[#FB9400] rounded-xl  justify-end   py-1 px-2  hover:shadow-lg"
+                    >
+                      <Icon size={"100%"} icon={pencil} />
+                    </span>
+                    <input type="file" className="hidden" />
+                  </label>
+                </div>
               </div>
 
-              <div>
-                
-              </div>
+              <div></div>
               <input
                 className="p-2 mt-3 rounded-xl border"
                 type="text"

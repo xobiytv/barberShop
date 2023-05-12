@@ -12,7 +12,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import { UserAuth } from "../../context/AuthContext";
 import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
-
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 
 
@@ -30,15 +30,15 @@ export default function Navbars() {
     <Box sx={{ flexGrow: 1 }} color="none">
       <AppBar position="static">
         <Toolbar className="bg-[#FB9400]">
-          <IconButton
+          {/* <IconButton
             size="large"
             aria-label="show 17 new notifications"
             color="inherit"
           >
             <Badge color="error">
-              <NotificationsIcon />
+              <ExitToAppIcon />
             </Badge>
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h6"
             noWrap
@@ -57,7 +57,7 @@ export default function Navbars() {
               color="inherit"
             >
               <Link to={"/sigin"}>
-                <KeyboardReturnIcon />
+                <ExitToAppIcon />
               </Link>
               {/* <Badge onClick={handleSignOut} color="error">
                 
