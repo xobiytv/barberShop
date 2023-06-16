@@ -10,7 +10,7 @@ export default function SalonMessage() {
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
           <Link className="pl-0 m-0" to={"/profel "}>
             <Icon className="mr-4" size={"30px"} icon={ic_keyboard_backspace} />
-            Invite Frends
+            Do`stlarni taklif qilish
           </Link>
         </h1>
       </div>
@@ -34,11 +34,11 @@ export default function SalonMessage() {
             <div className="w-1/6  flex justify-end mt-2">
               <Link
                 to={"/message"}
-                className="bg-[#FB9400] text-[#fff] h-9 pl-4 pr-4 pt-1 pb-1 text-center rounded-3xl text-white py-2
+                className="bg-[#FB9400] text-[#fff] h-9 pl-4 pr-4 pt-1 pb-1 text-center rounded-3xl py-2
                   hover:scale-105 duration-300"
                 // className="pl-5 text-[#FB9400] pr-5 pt-1 pb-1 text-end "
               >
-                Invite
+                Taklif qiling
               </Link>
 
               {/* <ArrowRightIcon className=" text-[#FB9400] " /> */}
@@ -69,7 +69,7 @@ export default function SalonMessage() {
                 type="Submit"
                 className=" w-full text-center rounded-3xl p-2 pl-3 pr-3 pt-1 pb-1"
               >
-                Invited
+                Taklif qilingan
               </Link>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function SalonMessage() {
                 type="Submit"
                 className=" w-full text-center rounded-3xl p-2 pl-3 pr-3 pt-1 pb-1"
               >
-                Invited
+                Taklif qilingan
               </Link>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function SalonMessage() {
                 type="Submit"
                 className=" w-full text-center rounded-3xl p-2 pl-3 pr-3 pt-1 pb-1"
               >
-                Invited
+                Taklif qilingan
               </Link>
             </div>
           </div>
@@ -152,42 +152,11 @@ export default function SalonMessage() {
             <div className="w-1/6  flex justify-end mt-2">
               <Link
                 to={"/message"}
-                className="bg-[#FB9400] text-[#fff] h-9 pl-4 pr-4 pt-1 pb-1 text-center rounded-3xl text-white py-2
+                className="bg-[#FB9400] text-[#fff] h-9 pl-4 pr-4 pt-1 pb-1 text-center rounded-3xl py-2
                   hover:scale-105 duration-300"
                 // className="pl-5 text-[#FB9400] pr-5 pt-1 pb-1 text-end "
               >
-                Invite
-              </Link>
-
-              {/* <ArrowRightIcon className=" text-[#FB9400] " /> */}
-            </div>
-          </div>
-          <hr className="ml-4 mr-4" />
-        </div>
-        <div>
-          <div className="flex justify-between items-center p-4 bg-white ">
-            <div className="w-1/6 mr-2 rounded-full items-center">
-              <img
-                className="rounded-full"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                alt=""
-              />
-            </div>
-            <div className="w-4/6  ml-2">
-              <div>
-                <p className="font-bold text-xl">Aleksandr Ilon</p>
-                <p>+998 (99) 123-12-33</p>
-                {/* <p className="text-[#FB9400]">$128</p> */}
-              </div>
-            </div>{" "}
-            <div className="w-1/6  flex justify-end mt-2">
-              <Link
-                to={"/message"}
-                className="bg-[#FB9400] text-[#fff] h-9 pl-4 pr-4 pt-1 pb-1 text-center rounded-3xl text-white py-2
-                  hover:scale-105 duration-300"
-                // className="pl-5 text-[#FB9400] pr-5 pt-1 pb-1 text-end "
-              >
-                Invite
+                Taklif qiling
               </Link>
 
               {/* <ArrowRightIcon className=" text-[#FB9400] " /> */}

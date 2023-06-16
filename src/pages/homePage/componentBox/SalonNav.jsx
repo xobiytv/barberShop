@@ -34,11 +34,11 @@ export default function LabTabs() {
             // sx={{ textColor: "#FB9400", indicatorColor: "#FB9400" }}
             aria-label="scrollable auto tabs example"
           >
-            <Tab label="Abut us" value="1" />
-            <Tab label="Services" value="2" />
-            <Tab label="Package" value="3" />
-            <Tab label="Gallery" value="4" />
-            <Tab label="Review" value="5" />
+            <Tab label="Biz" value="1" />
+            <Tab label="Hizmat" value="2" />
+            <Tab label="Paket" value="3" />
+            <Tab label="Galerya" value="4" />
+            <Tab label="Izohlar" value="5" />
           </TabList>
         </Box>
         <TabPanel value="1">

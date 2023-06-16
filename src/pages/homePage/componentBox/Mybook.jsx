@@ -89,12 +89,11 @@ export default function FixedBottomNavigation(props) {
       <CssBaseline />
       <Box sx={{ pb: 7 }} ref={ref}>
         <List>
-         
           {messageExamples.map((message, index) => (
             <div
               className="flex p-3 ml-5 mb-5 mr-5 bg-[#FDF1DF] rounded-2xl justify-between"
-              key={index}
-              onClick={() => handleClick(index)}
+              // key={index}
+              // onClick={() => handleClick(index)}
             >
               {/* //  + person */}
 
@@ -113,7 +112,8 @@ export default function FixedBottomNavigation(props) {
                     {/* <Avatar alt="Profile Picture" src={person} /> */}
                   </ListItemAvatar>
                 </div>
-                <div className="w-3/6">
+                <Link className="w-3/6" to={"/salonprofel"}>
+                 
                   <ListItemText
                     primary={message.primary}
                     secondary={message.secondary}
@@ -127,7 +127,7 @@ export default function FixedBottomNavigation(props) {
                       {message.iconB} {message.statistic}
                     </p>
                   </div>
-                </div>
+                </Link>
                 <div className="flex w-1/6 justify-end">
                   <BookmarkAddIcon sx={{ color: "#FB9400 " }} />
                 </div>
@@ -136,118 +136,6 @@ export default function FixedBottomNavigation(props) {
           ))}
         </List>
       </Box>
-      <Global
-        styles={{
-          ".MuiDrawer-root > .MuiPaper-root": {
-            height: `calc(40% - ${drawerBleeding}px)`,
-            overflow: "visible",
-          },
-        }}
-      />
-
-      <SwipeableDrawer
-        container={container}
-        anchor="top"
-        open={open}
-        onClose={toggleDrawer(false)}
-        onOpen={toggleDrawer(true)}
-        swipeAreaWidth={drawerBleeding}
-        disableSwipeToOpen={false}
-        ModalProps={{
-          keepMounted: true,
-        }}
-      >
-        <StyledBox
-          sx={{
-            position: "absolute",
-            bottom: -drawerBleeding,
-            borderTopLeftRadius: 8,
-            borderTopRightRadius: 8,
-            visibility: "visible",
-            right: 0,
-            left: 0,
-          }}
-        >
-          <Puller />
-          <List className="bg-[#E5E5E5]">
-            <div className=" flex justify-center w-full">
-              <h1 className="font-bold grid-cols-1  mt-4  text-2xl text-[#000000]">
-                Remove from Bookmark ?
-              </h1>
-            </div>
-            <div className="m-5 grid grid-cols-3 items-center text-gray-400">
-              <hr className="border-gray-400" />
-              <p className="text-center text-sm"></p>
-              <hr className="border-gray-400" />
-            </div>
-            {selectedObject && (
-              <div>
-                <div className="flex bg-[#fff] p-3 ml-5 mb-5 mr-5  rounded-2xl justify-between">
-                  <div className="w-48">
-                    <ListItemAvatar>
-                      <img
-                        className="w-24 h-24 mr-1 rounded-2xl"
-                        src={selectedObject.person}
-                        alt="Profile Picture"
-                      />
-                    </ListItemAvatar>
-                  </div>
-                  <div className="w-80">
-                    <ListItemText
-                      primary={selectedObject.primary}
-                      secondary={selectedObject.secondary}
-                    />
-                    <div className="flex gap-3 justify-start">
-                      <p>
-                        {selectedObject.iconA}
-                        {selectedObject.km} km
-                      </p>
-                      <p>
-                        {selectedObject.iconB}
-                        {/* Bu yerga kerakli ma'lumotlarni chiqarish uchun qo'shimcha kod yozishingiz kerak */}
-                        {selectedObject.statistic}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex justify-end">
-                    <BookmarkAddIcon sx={{ color: "#FB9400 " }} />
-                  </div>
-                </div>
-                <Stack
-                  className="flex justify-center flex-col align-content-center"
-                  spacing={2}
-                  direction="row"
-                >
-                  <Link
-                    to={"/"}
-                    className="bg-[#FDF1DF] text-[#FB9400] pl-12 pr-12 pt-3 pb-3 text-center rounded-3xl  py-2
-                  hover:scale-105 duration-300"
-                  >
-                    Cancel
-                  </Link>
-                  <Link
-                    to={"/salonprofel"}
-                    className="bg-[#FB9400] pl-10 pr-10 pt-3 pb-3 text-center rounded-3xl text-white py-2
-                  hover:scale-105 duration-300"
-                  >
-                    Yes, Remove
-                  </Link>
-                </Stack>
-              </div>
-            )}
-
-            {/* {selectedObject && (
-              <div>
-                <p>{selectedObject.primary}</p>
-                <p>{selectedObject.secondary}</p>
-              </div>
-            )} */}
-          </List>
-          <Skeleton variant="rectangular" height="100%" />
-        </StyledBox>
-
-        {/* <Skeleton variant="rectangular" height="100%" /> */}
-      </SwipeableDrawer>
     </Root>
   );
 }

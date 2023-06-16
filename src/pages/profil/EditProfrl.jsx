@@ -14,7 +14,7 @@ const EditProfel = () => {
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
           <Link className="pl-0 m-0" to={"/profel "}>
             <Icon className="mr-4" size={"30px"} icon={ic_keyboard_backspace} />
-            Edit Profel
+            Profelni tahrirlash
           </Link>
         </h1>
       </div>

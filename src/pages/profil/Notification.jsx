@@ -27,49 +27,49 @@ export default function Notification() {
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
           <Link className="pl-0 m-0" to={"/profel "}>
             <Icon className="mr-4" size={"30px"} icon={ic_keyboard_backspace} />
-            Notification
+            Bildirishnomalar
           </Link>
         </h1>
       </div>
       <div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">General Notification</p>{" "}
+          <p className="font-medium">Umumiy bildirishnoma</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Sound</p>{" "}
+          <p className="font-medium">Ovoz</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Vibrate</p>{" "}
+          <p className="font-medium">Tebranish</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Special Offers</p>{" "}
+          <p className="font-medium">Maxsus takliflar</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Promo & Discount</p>{" "}
+          <p className="font-medium">Promo va chegirma</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Payments</p>{" "}
+          <p className="font-medium">To'lovlar </p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Cashback</p>{" "}
+          <p className="font-medium">Keshbek</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">App Updates</p>{" "}
+          <p className="font-medium">Ilova yangilanishlari</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">New Service Available</p>{" "}
+          <p className="font-medium">Yangi xizmat mavjud</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">New Tips Available</p>{" "}
+          <p className="font-medium">Yangi maslahatlar mavjud</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         {/* <div className="ml-4 mr-4 mb-5 bg-none">

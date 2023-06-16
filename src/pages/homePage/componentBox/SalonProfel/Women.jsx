@@ -21,7 +21,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}
@@ -58,7 +58,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}
@@ -95,7 +95,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}
@@ -132,7 +132,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}
@@ -169,7 +169,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}
@@ -206,7 +206,7 @@ export default function () {
         <div className="w-3/6  ml-2">
           <div>
             <b className="font-extrabold">Undercut</b>
-            <p>713 booked </p>
+            <p>713 band qilingan </p>
             <p className="text-[#FB9400]">$128</p>
           </div>
         </div>{" "}

@@ -1,16 +1,21 @@
+import Navbar from "../../../components/user/navbar/Navbar";
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { ic_keyboard_backspace } from "react-icons-kit/md/ic_keyboard_backspace";
-import { Link } from "react-router-dom";
-import { Icon } from "react-icons-kit";
-import Calls from "./Calls";
-// import ServerNav from "../homePage/componentBox/SalonProfel/ServerNav";
-import Chats from "./Chats";
-import Footer from "../homePage/Footer";
+import Faol from "./Faol";
+import Tolanmagan from "./Tolanmagan";
+import Kutilayotgan from "./Kutilayotgan";
+import Nofaol from "./Nofaol";
+import Radetilgan from "./Nofaol";
+
+// import Footer from "../homePage/Footer";
+// import Upcoming from "./Upcoming";
+// import Completed from "./Completed";
+// import Cancelled from "./Cancelled";
+
 // import Button from "@mui/material/Button";
 
 function TabPanel(props) {
@@ -54,33 +59,36 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <div>
-        <h1 className="font-bold grid-cols-1  m-5 text-3xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/"}>
-            <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
-          </Link>
-          Muloqotlat
-        </h1>
-      </div>
-      <Box sx={{}}>
+    <div className="flex ">
+      <Navbar />
+
+      <div className="mt-16">
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Suhbatlar" {...a11yProps(0)} />
-          <Tab label="Qo'ng'roqlar" {...a11yProps(1)} />
+          <Tab label="Faol" {...a11yProps(0)} />
+          <Tab label="To`lanmagan" {...a11yProps(1)} />
+          <Tab label="Kutilayotgan" {...a11yProps(2)} />
+          <Tab label="Nofaol" {...a11yProps(3)} />
+          {/* <Tab label="Rad etilgan" {...a11yProps(4)} /> */}
         </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        <Chats />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Calls />
-      </TabPanel>
 
-      <Footer />
-    </Box>
+        <TabPanel value={value} index={0}>
+          <Faol />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <Tolanmagan />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Kutilayotgan />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <Radetilgan />
+        </TabPanel>
+      </div>
+      {/* <Footer /> */}
+    </div>
   );
 }

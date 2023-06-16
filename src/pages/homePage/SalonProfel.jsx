@@ -5,7 +5,6 @@ import PlaceIcon from "@mui/icons-material/Place";
 import StarHalfIcon from "@mui/icons-material/StarHalf";
 // import BookmarkAddIcon from "@mui/icons-material/BookmarkAdd";
 import { Link } from "react-router-dom";
-import LanguageIcon from "@mui/icons-material/Language";
 import ChatIcon from '@mui/icons-material/Chat';
 import CallIcon from "@mui/icons-material/Call";
 // import PlaceIcon from "@mui/icons-material/Place";
@@ -16,9 +15,7 @@ import './componentBox/SalonProfel.css'
 import About from './componentBox/SalonNav'
 import { Global } from "@emotion/react";
 import { styled } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
 import { grey } from "@mui/material/colors";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -133,18 +130,6 @@ export default function SalonProfel(props) {
 
       <div className="ml-5 mr-5 ">
         <ul className="flex justify-between mb-4">
-          {/* <li className=" ">
-            <Link className="m-0 text-center" to={"/haircuts"}>
-              <div className="w-12 translate-y-5 rounded-full h-12 bg-[#FDF1DF] items-center  flex justify-center ">
-                <LanguageIcon
-                  color="action"
-                  sx={{ fontSize: 24, color: "#FB9400 " }}
-                />
-              </div>
-              <br />
-              <p className="text-center text-xs">WebSite</p>
-            </Link>
-          </li> */}
           <li className=" ">
             <Link className="m-0 text-center" to={"/message"}>
               <div className="w-12 translate-y-5 rounded-full h-12 bg-[#FDF1DF] items-center  flex justify-center ">
@@ -154,7 +139,7 @@ export default function SalonProfel(props) {
                 />
               </div>
               <br />
-              <p className="text-center text-xs">Message</p>
+              <p className="text-center text-xs">Xabar</p>
             </Link>
           </li>
           <li className=" ">
@@ -166,7 +151,7 @@ export default function SalonProfel(props) {
                 />
               </div>
               <br />
-              <p className="text-center text-xs">Call</p>
+              <p className="text-center text-xs">Aloqa</p>
             </Link>
           </li>
           <li className=" ">
@@ -179,7 +164,7 @@ export default function SalonProfel(props) {
                 />
               </div>
               <br />
-              <p className="text-center text-xs">Diraction</p>
+              <p className="text-center text-xs">Joylashuv</p>
             </Link>
           </li>
           <li className=" ">
@@ -191,9 +176,6 @@ export default function SalonProfel(props) {
                 },
               }}
             />
-            {/* <Box sx={{ textAlign: "center", pt: 1 }}>
-              <Button onClick={toggleDrawer(true)}>Open</Button>
-            </Box> */}
 
             <button
               onClick={toggleDrawer(true)}
@@ -208,7 +190,7 @@ export default function SalonProfel(props) {
                 />
               </div>
               <br />
-              <p className="text-center text-xs">Share</p>
+              <p className="text-center text-xs">Ulashish</p>
             </button>
           </li>
         </ul>
@@ -217,10 +199,10 @@ export default function SalonProfel(props) {
 
       <div className="ml-5 mt-3 mb-5 mr-5">
         <div className="flex justify-between ">
-          <b className="text-xl">Our Sprcialist</b>
+          <b className="text-xl">Barcha masterlar</b>
 
           <Link to={"/salonmessage"} className=" text-[#FB9400] ">
-            <b>See All</b>
+            <b>Umummiy</b>
           </Link>
         </div>
 

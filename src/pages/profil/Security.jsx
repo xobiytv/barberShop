@@ -28,13 +28,13 @@ export default function Security() {
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
           <Link className="pl-0 m-0" to={"/profel "}>
             <Icon className="mr-4" size={"30px"} icon={ic_keyboard_backspace} />
-            Security
+            Xavfsizlik
           </Link>
         </h1>
       </div>
       <div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Remember me</p>{" "}
+          <p className="font-medium">Meni eslaysizmi</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
@@ -42,7 +42,7 @@ export default function Security() {
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="flex justify-between mt-2 itmes-center ml-5">
-          <p className="font-medium">Biomettic ID</p>{" "}
+          <p className="font-medium">Biometik identifikator</p>{" "}
           <Switch {...label} defaultChecked color="warning" />
         </div>
         <div className="ml-4 mr-4 mb-5 bg-none">
@@ -52,7 +52,7 @@ export default function Security() {
             type="Submit"
             className="text-[#FB9400] w-full mt-5 text-center rounded-3xl bg-[#FDF1DF] text-xl py-2 hover:scale-105 duration-300"
           >
-            Change Password
+            Parolni o'zgartirish
           </Link>
         </div>
       </div>

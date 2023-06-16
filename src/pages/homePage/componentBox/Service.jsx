@@ -6,10 +6,10 @@ export default function Service() {
   return (
     <div className="bg-[#fff]">
       <div className="flex justify-between ">
-        <b className="text-xl">Our Service</b>
+        <b className="text-xl">Bizning xizmatimiz</b>
 
         <Link to={"/logUp"} className=" text-[#FB9400] ">
-          <b>See All</b>
+          <b>Umumiy</b>
         </Link>
       </div>
 
@@ -73,15 +73,16 @@ export default function Service() {
         </div>
       </Link>
 
-      <Link to={"/ourserice"}> <div className="flex justify-between drop-shadow-xl p-4 bg-white mt-3 rounded-xl">
-        <p>Face Make Up</p>
-        <div>
-          <b>18 types</b>
-          <ArrowRightIcon className=" text-[#FB9400] " />
+      <Link to={"/ourserice"}>
+        {" "}
+        <div className="flex justify-between drop-shadow-xl p-4 bg-white mt-3 rounded-xl">
+          <p>Face Make Up</p>
+          <div>
+            <b>18 types</b>
+            <ArrowRightIcon className=" text-[#FB9400] " />
+          </div>
         </div>
-      </div></Link>
-
-     
+      </Link>
     </div>
   );
 }

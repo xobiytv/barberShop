@@ -21,23 +21,23 @@ function About(props) {
         </p>
       </div>
       <div className="mt-5">
-        <b>Working Hours</b>
+        <b>Ish vaqti</b>
         <p className="mt-3">
-          Monday - Friday : <b>08:00 AM - 21:00 PM</b>
+          Dushanba - Juma : <b>08:00 - 21:00</b>
         </p>
         <p className="mt-2">
-          Soturdat - Sunday : <b>10:00 AM - 20:00 PM</b>
+          Shanba - Yakshanba : <b>10:00 - 20:00</b>
         </p>
       </div>
       <div className="mt-4">
-        <b>Contact us:  </b>
+        <b>Biz bilan bog'lanish:  </b>
         <span className=" mt-5 mb-5 text-[#FB9400] text-xl font-bold ">
-          (304) 444-2133
+          +998 (99) 444-2133
         </span>
       </div>
       <div className="mt-4">
         <div className="flex justify-between ">
-          <b className="text-xl">Our Address</b>
+          <b className="text-xl">Bizning manzil</b>
 
           <Link to={"/logUp"} className=" text-[#FB9400] ">
             <b>See On Maps</b>

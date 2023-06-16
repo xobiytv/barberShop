@@ -36,7 +36,7 @@ export default function Footer() {
         <Link to={"/profel"} label="Profile">
           <PersonIcon sx={{ fontSize: 25, color: "#FB9400 " }} />
         </Link>
-      </div>
+      </div> 
       {/* <BottomNavigation
         sx={{ width: "100%" }}
         // value={value}

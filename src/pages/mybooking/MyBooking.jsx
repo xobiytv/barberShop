@@ -57,23 +57,16 @@ export default function BasicTabs() {
     <Box sx={{ width: "100%" }}>
       <Navbar />
 
-      {/* <div>
-        <h1 className="font-bold grid-cols-1  m-5 text-3xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/"}>
-            <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
-          </Link>
-          My Booking
-        </h1>
-      </div> */}
+      
       <Box sx={{}}>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Upcoming" {...a11yProps(0)} />
-          <Tab label="Completed" {...a11yProps(1)} />
-          <Tab label="Cancelled" {...a11yProps(2)} />
+          <Tab label="Kelgusida" {...a11yProps(0)} />
+          <Tab label="Bajarildi" {...a11yProps(1)} />
+          <Tab label="Bekor qilingan" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

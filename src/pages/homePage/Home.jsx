@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 // import CoffeeMakerIcon from '@mui/icons-material/CoffeeMaker';
 // import NoEncryptionGmailerrorredOutlinedIcon from "@mui/icons-material/NoEncryptionGmailerrorredOutlined";
 // import SendTimeExtensionOutlinedIcon from "@mui/icons-material/SendTimeExtensionOutlined";
-import Mybook from './componentBox/Mybook'
+import Mybook from "./componentBox/Mybook";
 // import Nav from './componentBox/Nav'
-import Navbar from './Navbar'
+import Navbar from "./Navbar";
 import CleanHandsIcon from "@mui/icons-material/CleanHands";
 import Face3Icon from "@mui/icons-material/Face3";
-import SignLanguageIcon from '@mui/icons-material/SignLanguage';
+import SignLanguageIcon from "@mui/icons-material/SignLanguage";
 import Face6Icon from "@mui/icons-material/Face6";
-// import Footer from './Footer'
+import Footer from './Footer'
 
 export default function Home() {
   const { user } = UserAuth();
@@ -33,7 +33,7 @@ export default function Home() {
       <header>
         <div className=" flex justify-center w-full">
           <h1 className="font-bold grid-cols-1  mt-4  text-2xl text-[#000000]">
-            Morning, {user?.displayName} 👋
+            Xayrli ertangiz, {user?.displayName} 👋
           </h1>
         </div>
         <form class="flex flex-col  mt-5 w-full justify-start items-center ">
@@ -42,7 +42,7 @@ export default function Home() {
             {/* <i></i> */}
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Qidirish..."
               className="pl-10 w-full    l pt-2 pr-2 pb-2 border font-display focus:outline-none focus:border-primarycolor transition-all duration-500 capitalize text-lg"
             />
           </div>
@@ -54,8 +54,8 @@ export default function Home() {
               <div>
                 <div className=" pr-3 pl-3 pt-7 flex w-full justify-between">
                   <div className="">
-                    <p className="text-[#fff]">30% OFF</p>
-                    <b className="text-xl text-[#fff]">Today's special</b>
+                    <p className="text-[#fff]">30% chegirma</p>
+                    <b className="text-xl text-[#fff]">Bugungi maxsus</b>
                   </div>
                   <div className="rigth">
                     <b className="font-bold text-5xl color text-[#fff]">30%</b>
@@ -74,8 +74,8 @@ export default function Home() {
               <div>
                 <div className=" pr-3 pl-3 pt-7 flex w-full justify-between">
                   <div className="">
-                    <p className="text-[#fff]">30% OFF</p>
-                    <b className="text-xl text-[#fff]">Today's special</b>
+                    <p className="text-[#fff]">30% chegirma</p>
+                    <b className="text-xl text-[#fff]">Bugungi maxsus</b>
                   </div>
                   <div className="rigth">
                     <b className="font-bold text-5xl color text-[#fff]">30%</b>
@@ -94,8 +94,8 @@ export default function Home() {
               <div>
                 <div className=" pr-3 pl-3 pt-7 flex w-full justify-between">
                   <div className="">
-                    <p className="text-[#fff]">30% OFF</p>
-                    <b className="text-xl text-[#fff]">Today's special</b>
+                    <p className="text-[#fff]">30% chegirma</p>
+                    <b className="text-xl text-[#fff]">Bugungi maxsus</b>
                   </div>
                   <div className="rigth">
                     <b className="font-bold text-5xl color text-[#fff]">30%</b>
@@ -114,8 +114,8 @@ export default function Home() {
               <div>
                 <div className=" pr-3 pl-3 pt-7 flex w-full justify-between">
                   <div className="">
-                    <p className="text-[#fff]">30% OFF</p>
-                    <b className="text-xl text-[#fff]">Today's special</b>
+                    <p className="text-[#fff]">30% chegirma</p>
+                    <b className="text-xl text-[#fff]">Bugungi maxsus</b>
                   </div>
                   <div className="rigth">
                     <b className="font-bold text-5xl color text-[#fff]">30%</b>
@@ -134,8 +134,8 @@ export default function Home() {
               <div>
                 <div className=" pr-3 pl-3 pt-7 flex w-full justify-between">
                   <div className="">
-                    <p className="text-[#fff]">30% OFF</p>
-                    <b className="text-xl text-[#fff]">Today's special</b>
+                    <p className="text-[#fff]">30% chegirma</p>
+                    <b className="text-xl text-[#fff]">Bugungi maxsus</b>
                   </div>
                   <div className="rigth">
                     <b className="font-bold text-5xl color text-[#fff]">30%</b>
@@ -164,7 +164,7 @@ export default function Home() {
                   />
                 </div>
                 <br />
-                <b className="text-center">Haircuts</b>
+                <b className="text-center">O'tkirlik</b>
               </Link>
             </li>
             <li className=" ">
@@ -176,7 +176,7 @@ export default function Home() {
                   />
                 </div>
                 <br />
-                <b className="text-center">Make UP</b>
+                <b className="text-center">Make-up</b>
               </Link>
             </li>
             <li className=" ">
@@ -188,7 +188,7 @@ export default function Home() {
                   />
                 </div>
                 <br />
-                <b className="text-center">Manicure</b>
+                <b className="text-center">Manikyur</b>
               </Link>
             </li>
             <li className=" ">
@@ -196,12 +196,11 @@ export default function Home() {
                 <div className="w-16 translate-y-5 rounded-full h-16 bg-[#FDF1DF] items-center  flex justify-center ">
                   <Face3Icon
                     color="action"
-                    // sx={{ color: "#FB9400 " }}
                     sx={{ fontSize: 37, color: "#FB9400 " }}
                   />
                 </div>
                 <br />
-                <b className="text-center">Ukaladki</b>
+                <b className="text-center">Uchka</b>
               </Link>
             </li>
           </ul>
@@ -211,17 +210,17 @@ export default function Home() {
       <section>
         <div className="ml-5 mt-5 mb-5 mr-4">
           <div className="flex justify-between ">
-            <b className="text-xl">Nearby Your Location</b>
+            <b className="text-xl">Muhitdagi joylashuvingiz</b>
 
             <Link to={"/logUp"} className=" text-[#FB9400] ">
-              <b>See All</b>
+              <b>Hammasini ko'rish</b>
             </Link>
           </div>
         </div>
         {/* <Nav  />  */}
         <Mybook />
       </section>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

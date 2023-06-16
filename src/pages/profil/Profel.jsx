@@ -69,7 +69,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <PersonIcon />
-                <p className="font-medium">Edit Profel</p>{" "}
+                <p className="font-medium">Profelni tahrirlash</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -82,7 +82,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <NotificationsIcon />
-                <p className="font-medium">Notification</p>{" "}
+                <p className="font-medium">Bildirishnomalar</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -95,7 +95,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <AccountBalanceWalletIcon />
-                <p className="font-medium">Payment</p>{" "}
+                <p className="font-medium">To`lov</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -108,7 +108,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <SecurityIcon />
-                <p className="font-medium">Security</p>{" "}
+                <p className="font-medium">Xavfsizlik</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -121,7 +121,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <LanguageIcon />
-                <p className="font-medium">Language</p>{" "}
+                <p className="font-medium">Til</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -134,7 +134,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <LocalPoliceIcon />
-                <p className="font-medium">Privacy Policy</p>{" "}
+                <p className="font-medium">Maxfilik siyosati</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -147,7 +147,7 @@ export default function Profel() {
             <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
               <div className="flex gap-2">
                 <PeopleAltIcon />
-                <p className="font-medium">Invite Friends</p>{" "}
+                <p className="font-medium">Do`stlarni taklif qilish</p>{" "}
               </div>
 
               <ArrowForwardIosIcon fontSize="small" />
@@ -156,21 +156,23 @@ export default function Profel() {
         </div>
 
         <div>
-          <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
-            <div className="flex gap-2">
-              <LogoutIcon sx={{ color: pink[500] }} />
-              <p className="font-medium text-[red]">Logout</p>{" "}
-            </div>
+          <Link to="/admin">
+            <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
+              <div className="flex gap-2">
+                <LogoutIcon sx={{ color: pink[500] }} />
+                <p className="font-medium text-[red]">Chiqish</p>{" "}
+              </div>
 
-            {/* <ArrowForwardIosIcon /> */}
-          </div>
+              {/* <ArrowForwardIosIcon /> */}
+            </div>{" "}
+          </Link>
         </div>
 
         <div>
           <div className="flex justify-between mt-2 itmes-center ml-5 mr-5">
             <div className="flex gap-2">
               <RemoveRedEyeIcon />
-              <p className="font-medium">Dark Mode</p>{" "}
+              <p className="font-medium">Qorong`i rejim</p>{" "}
             </div>
 
             <Switch {...label} defaultChecked color="warning" />

@@ -1,37 +1,37 @@
-import React, {useEffect} from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 // import Navbar from './components/Navbar';
-import Protected from './components/Protected';
-import { AuthContextProvider } from './context/AuthContext';
-import Account from './pages/homePage/Account';
+import Protected from "./components/Protected";
+import { AuthContextProvider } from "./context/AuthContext";
+import Account from "./pages/homePage/Account";
 // import Home from './pages/Home';
-import Signin from './pages/regiter/Signin';
-import LogIn from './pages/regiter/LogIn';
-import SignUp from './pages/regiter/SignUo';
+import Signin from "./pages/regiter/Signin";
+import LogIn from "./pages/regiter/LogIn";
+import SignUp from "./pages/regiter/SignUo";
 // import Profel from "./profil/Profel";
 // import * as te from "tw-elements";
 // import Profel from './pages/profil/Profel';
 import Main from "./pages/Main";
 import Beli from "./pages/homePage/Beli.jsx";
-import MyBookmark from './pages/homePage/MyBookmark';
+import MyBookmark from "./pages/homePage/MyBookmark";
 // import Test from './pages/homePage/Test';
-import Haircuts from './pages/homePage/Haircuts'
+import Haircuts from "./pages/homePage/Haircuts";
 import Manicure from "./pages/homePage/Manucure";
 import Makeup from "./pages/homePage/Makeup";
 import Ucaladki from "./pages/homePage/Ucaladki";
-import SalonProfel from './pages/homePage/SalonProfel';
+import SalonProfel from "./pages/homePage/SalonProfel";
 import OurSerice from "./pages/homePage/componentBox/SalonProfel/OurService";
 import BookApply from "./pages/homePage/componentBox/SalonProfel/BookApply";
 import Metods from "./pages/payment/Metods";
 import Chake from "./pages/payment/Chake";
-import PacageProfel from './pages/homePage/componentBox/SalonProfel/PacageProfel'
+import PacageProfel from "./pages/homePage/componentBox/SalonProfel/PacageProfel";
 import Message from "./pages/homePage/componentBox/SalonProfel/Message";
 import Call from "./pages/homePage/componentBox/SalonProfel/Call";
 import Share from "./pages/homePage/componentBox/SalonProfel/Share";
 import SalonMessage from "./pages/homePage/componentBox/SalonProfel/SalonMessage";
 import Profel from "./pages/profil/Profel";
 import Explore from "./pages/explore/Explore";
-import Inbox from './pages/inbox/Inbox';
+import Inbox from "./pages/inbox/Inbox";
 import MyBooking from "./pages/mybooking/MyBooking";
 // import InviteFriends from "./pages/profil/InviteFrends";
 import EditProfel from "./pages/profil/EditProfrl";
@@ -41,13 +41,18 @@ import Language from "./pages/profil/Language";
 import PrivacyPolicy from "./pages/profil/PrivacyPolicy";
 import InviteFriends from "./pages/profil/InviteFrends";
 
+// ======= admin =======
+import MainAdmin from './pages/user/Main'
+import Haber from './pages/user/chat/Habar'
+import Elon from './pages/user/elon/Elon'
+
 function App() {
   useEffect(() => {
-  const importTE = async () => {
-    await import("tw-elements");
-  };
-  importTE();
-}, []);
+    const importTE = async () => {
+      await import("tw-elements");
+    };
+    importTE();
+  }, []);
 
   return (
     <div>
@@ -87,6 +92,11 @@ function App() {
           <Route path="/language" element={<Language />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/invitefriends" element={<InviteFriends />} />
+
+          {/* ====== admin ====== */}
+          <Route path="/admin" exace element={<MainAdmin />} />
+          <Route path="/elon" exace element={<Elon />} />
+          <Route path="/habar" exace element={<Haber />} />
 
           {/* <Route path="/movie" element={<Movies />} /> */}
           <Route

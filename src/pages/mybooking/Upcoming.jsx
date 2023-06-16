@@ -26,7 +26,7 @@ export default function Upcoming() {
         <div className="flex mt-1 justify-between items-center">
           <b>Dec 22, 2022 - 10:00 PM</b>
           <div className="">
-            <p className="text-xs">Remind me</p>
+            <p className="text-xs">Menga eslat</p>
             <Switch {...label} defaultChecked color="warning" />
           </div>
           
@@ -53,17 +53,7 @@ export default function Upcoming() {
         </div>
         <hr className="m-3" />
         <div className="flex justify-between">
-          {/* <div className=" bg-none border-2 mt-3 border-[#FB9400] rounded-3xl hover:scale-105 duration-300">
-            <Link
-              to={"/"}
-              variant="primary"
-              type="Submit"
-              className="text-[#FB9400] border-spacing-1 w-full  text-center  p-4 pb-2 pt-2 "
-            >
-              Add New Card
-            </Link>
-          </div> */}
-
+         
           <div className="rounded-3xl border-2 border-[#FB9400] bg-none   p-4 pb-2 pt-2 text-[#FB9400] hover:scale-105 duration-300">
             <Link
               to={"/chake"}
@@ -71,7 +61,7 @@ export default function Upcoming() {
               type="Submit"
               className=" w-full text-center rounded-3xl p-2 pb-1 pt-1  text-xs"
             >
-              Cancel Booking
+              Buyurmani bekor qilish
             </Link>
           </div>
           <div className="rounded-3xl bg-none  bg-[#FB9400] p-4 pb-2 pt-2 text-white hover:scale-105 duration-300">
@@ -86,11 +76,12 @@ export default function Upcoming() {
           </div>
         </div>
       </div>
-      <div className="drop-shadow-xl p-4 bg-white mt-8 rounded-xl">
+     
+      <div className="drop-shadow-xl p-4 bg-white mt-5 rounded-xl">
         <div className="flex mt-1 justify-between items-center">
           <b>Dec 22, 2022 - 10:00 PM</b>
           <div className="">
-            <p className="text-xs">Remind me</p>
+            <p className="text-xs">Menga eslat</p>
             <Switch {...label} defaultChecked color="warning" />
           </div>
           
@@ -117,17 +108,7 @@ export default function Upcoming() {
         </div>
         <hr className="m-3" />
         <div className="flex justify-between">
-          {/* <div className=" bg-none border-2 mt-3 border-[#FB9400] rounded-3xl hover:scale-105 duration-300">
-            <Link
-              to={"/"}
-              variant="primary"
-              type="Submit"
-              className="text-[#FB9400] border-spacing-1 w-full  text-center  p-4 pb-2 pt-2 "
-            >
-              Add New Card
-            </Link>
-          </div> */}
-
+         
           <div className="rounded-3xl border-2 border-[#FB9400] bg-none   p-4 pb-2 pt-2 text-[#FB9400] hover:scale-105 duration-300">
             <Link
               to={"/chake"}
@@ -135,7 +116,7 @@ export default function Upcoming() {
               type="Submit"
               className=" w-full text-center rounded-3xl p-2 pb-1 pt-1  text-xs"
             >
-              Cancel Booking
+              Buyurmani bekor qilish
             </Link>
           </div>
           <div className="rounded-3xl bg-none  bg-[#FB9400] p-4 pb-2 pt-2 text-white hover:scale-105 duration-300">
@@ -150,11 +131,12 @@ export default function Upcoming() {
           </div>
         </div>
       </div>
-      <div className="drop-shadow-xl p-4 bg-white mt-8 rounded-xl">
+     
+      <div className="drop-shadow-xl p-4 bg-white mt-5 rounded-xl">
         <div className="flex mt-1 justify-between items-center">
           <b>Dec 22, 2022 - 10:00 PM</b>
           <div className="">
-            <p className="text-xs">Remind me</p>
+            <p className="text-xs">Menga eslat</p>
             <Switch {...label} defaultChecked color="warning" />
           </div>
           
@@ -181,17 +163,7 @@ export default function Upcoming() {
         </div>
         <hr className="m-3" />
         <div className="flex justify-between">
-          {/* <div className=" bg-none border-2 mt-3 border-[#FB9400] rounded-3xl hover:scale-105 duration-300">
-            <Link
-              to={"/"}
-              variant="primary"
-              type="Submit"
-              className="text-[#FB9400] border-spacing-1 w-full  text-center  p-4 pb-2 pt-2 "
-            >
-              Add New Card
-            </Link>
-          </div> */}
-
+         
           <div className="rounded-3xl border-2 border-[#FB9400] bg-none   p-4 pb-2 pt-2 text-[#FB9400] hover:scale-105 duration-300">
             <Link
               to={"/chake"}
@@ -199,7 +171,7 @@ export default function Upcoming() {
               type="Submit"
               className=" w-full text-center rounded-3xl p-2 pb-1 pt-1  text-xs"
             >
-              Cancel Booking
+              Buyurmani bekor qilish
             </Link>
           </div>
           <div className="rounded-3xl bg-none  bg-[#FB9400] p-4 pb-2 pt-2 text-white hover:scale-105 duration-300">
@@ -214,11 +186,12 @@ export default function Upcoming() {
           </div>
         </div>
       </div>
-      <div className="drop-shadow-xl p-4 bg-white mt-8 rounded-xl">
+     
+      <div className="drop-shadow-xl p-4 bg-white mt-5 rounded-xl">
         <div className="flex mt-1 justify-between items-center">
           <b>Dec 22, 2022 - 10:00 PM</b>
           <div className="">
-            <p className="text-xs">Remind me</p>
+            <p className="text-xs">Menga eslat</p>
             <Switch {...label} defaultChecked color="warning" />
           </div>
           
@@ -245,17 +218,7 @@ export default function Upcoming() {
         </div>
         <hr className="m-3" />
         <div className="flex justify-between">
-          {/* <div className=" bg-none border-2 mt-3 border-[#FB9400] rounded-3xl hover:scale-105 duration-300">
-            <Link
-              to={"/"}
-              variant="primary"
-              type="Submit"
-              className="text-[#FB9400] border-spacing-1 w-full  text-center  p-4 pb-2 pt-2 "
-            >
-              Add New Card
-            </Link>
-          </div> */}
-
+         
           <div className="rounded-3xl border-2 border-[#FB9400] bg-none   p-4 pb-2 pt-2 text-[#FB9400] hover:scale-105 duration-300">
             <Link
               to={"/chake"}
@@ -263,7 +226,7 @@ export default function Upcoming() {
               type="Submit"
               className=" w-full text-center rounded-3xl p-2 pb-1 pt-1  text-xs"
             >
-              Cancel Booking
+              Buyurmani bekor qilish
             </Link>
           </div>
           <div className="rounded-3xl bg-none  bg-[#FB9400] p-4 pb-2 pt-2 text-white hover:scale-105 duration-300">
@@ -278,6 +241,7 @@ export default function Upcoming() {
           </div>
         </div>
       </div>
+     
     </div>
   );
 }

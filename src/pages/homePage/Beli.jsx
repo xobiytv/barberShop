@@ -20,8 +20,8 @@ export default function Beli() {
   const messages = [
     {
       id: 1,
-      primary: "Payment Successful",
-      secondary: "You have mode a salon payment",
+      primary: "Toʻlov muvaffaqiyatli amalga oshirildi",
+      secondary: "Sizda salon to'lovi rejimi mavjud",
       person: (
         <AccountBalanceWalletIcon sx={{ fontSize: 37, color: "#fff " }} />
       ),
@@ -31,8 +31,8 @@ export default function Beli() {
     },
     {
       id: 2,
-      primary: "New Services Available",
-      secondary: `You have can search the nearest salon`,
+      primary: "Yangi xizmatlar mavjud",
+      secondary: `Siz eng yaqin salonni qidirishingiz mumkin`,
       person: <AddBoxIcon sx={{ fontSize: 37, color: "#fff " }} />,
       clasn:
         "w-20  rounded-full h-20 bg-[#FF7589] items-center  flex justify-center ",
@@ -40,8 +40,8 @@ export default function Beli() {
     },
     {
       id: 3,
-      primary: "Today`s Special Offers",
-      secondary: "You get a speacial promo today",
+      primary: "Bugungi maxsus takliflar",
+      secondary: "Bugun siz maxsus promoga ega bo'lasiz",
       person: <LocalActivityIcon sx={{ fontSize: 37, color: "#fff " }} />,
       utl: "/offer",
       clasn:
@@ -49,8 +49,8 @@ export default function Beli() {
     },
     {
       id: 4,
-      primary: "Credit Card Connected!",
-      secondary: "Credit Card has been linked ",
+      primary: "Kredit karta ulandi!",
+      secondary: "Kredit karta ulandi",
       person: <AddCardIcon sx={{ fontSize: 37, color: "#fff " }} />,
       utl: "/card",
       clasn:
@@ -58,10 +58,10 @@ export default function Beli() {
     },
     {
       id: 5,
-      primary: "Account SetUp Successful!",
-      secondary: "You account has been created!",
+      primary: "Hisob sozlandi!",
+      secondary: "Hisob qaydnomangiz yaratildi!",
       person: <PersonIcon sx={{ fontSize: 37, color: "#fff " }} />,
-      utl: "/account",
+      utl: "/profel",
       clasn:
         "w-20  rounded-full h-20 bg-[#4ADE80] items-center  flex justify-center ",
     },

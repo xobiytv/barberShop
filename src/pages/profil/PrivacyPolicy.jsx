@@ -10,14 +10,14 @@ export default function PrivacyPolicy() {
         <h1 className="font-bold grid-cols-1  m-5 text-xl text-[#000000]">
           <Link className="pl-0 m-0" to={"/profel "}>
             <Icon className="mr-4" size={"30px"} icon={ic_keyboard_backspace} />
-            Privacy Policy
+            Maxfilik siyosati
           </Link>
         </h1>
       </div>
 
       <div>
         <div className="m-5">
-          <b>1. Types of Data We Collect</b>
+          <b>1. Biz to'playdigan ma'lumotlar turlari</b>
           <p className="text-xs mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             asperiores soluta voluptas non accusantium consequatur debitis
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
           </p>
         </div>
         <div className="m-5">
-          <b>2. Use of Your Personal Data</b>
+          <b>2. Shaxsiy ma'lumotlaringizdan foydalanish</b>
           <p className="text-xs mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             asperiores soluta voluptas non accusantium consequatur debitis
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
           </p>
         </div>
         <div className="m-5">
-          <b>3. Disclosure of Your Personal Data</b>
+          <b>3. Shaxsiy ma'lumotlaringizni oshkor qilish</b>
           <p className="text-xs mt-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
             asperiores soluta voluptas non accusantium consequatur debitis

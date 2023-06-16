@@ -4,14 +4,10 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { ic_keyboard_backspace } from "react-icons-kit/md/ic_keyboard_backspace";
-import { Link } from "react-router-dom";
-import { Icon } from "react-icons-kit";
-import Man from './Man'
-import ServerNav from "./ServerNav";
-import Women from "./Women";
-// import Button from "@mui/material/Button";
-
+import AdminCalls from "./AdminCalls";
+import AdminChats from "./AdminChats";
+import Navbar from "../../../components/user/navbar/Navbar";
+import AdminMessage from "./Message";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,33 +50,31 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <div>
-        <h1 className="font-bold grid-cols-1  m-5 text-3xl text-[#000000]">
-          <Link className="pl-0 m-0" to={"/salonprofel"}>
-            <Icon className="mr-3" size={"40px"} icon={ic_keyboard_backspace} />
-          </Link>
-          Haircuts
-        </h1>
-      </div>
-      <Box sx={{}}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="Erkaklar" {...a11yProps(0)} />
-          <Tab label="Ayollar" {...a11yProps(1)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        <Man />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Women />
-      </TabPanel>
+    <div className="flex ">
+      <Navbar />
+      <div className="flex w-full mt-14">
+        <div className="w-12/12">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+          >
+            <Tab label="Suhbatlar" {...a11yProps(0)} />
+            <Tab label="Qo'ng'roqlar" {...a11yProps(1)} />
+          </Tabs>
 
-      <ServerNav />
-    </Box>
+          <TabPanel value={value} index={0}>
+            <AdminChats />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <AdminCalls />
+          </TabPanel>
+        </div>
+
+        <div className="w-full">
+          <AdminMessage />
+        </div>
+      </div>
+    </div>
   );
 }

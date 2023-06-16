@@ -5,7 +5,7 @@ export default function Package() {
   return (
     <div className="bg-[#fff]">
       <div className="flex justify-between ">
-        <b className="text-xl">Our Package</b>
+        <b className="text-xl">Bizning paketimiz</b>
 
         <Link to={"/logUp"} className=" text-[#FB9400] ">
           <b>See All</b>

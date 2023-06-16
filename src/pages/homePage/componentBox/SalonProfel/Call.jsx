@@ -30,7 +30,7 @@ export default function Call() {
           />
         </div>
         <b className="text-xl"> Barberrlla Inova</b>
-        <p>02:28 minutes</p>
+        <p>02:28 minut</p>
       </div>
       <Paper
         sx={{

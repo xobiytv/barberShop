@@ -16,13 +16,6 @@ export default function PacageProfel() {
   return (
     <div>
       <div className="ml-5 mr-5  mt-3 mb-3 ">
-        {/* <Link className="pl-0 m-0" to={"/"}>
-          <Icon
-            className="mr-3  origin-top"
-            size={"35px"}
-            icon={ic_keyboard_backspace}
-          />
-        </Link> */}
         <div>
           <h1 className="font-bold mb-5 grid-cols-1   text-xl text-[#000000]">
             <Link className="pl-0 m-0" to={"/salonprofel"}>
@@ -60,28 +53,29 @@ export default function PacageProfel() {
         <div className="flex justify-between">
           <ul className="m-0 p-0">
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" /> Haircut
+              <Checkbox {...label} defaultChecked color="secondary" /> Soch
+              kesish
             </li>
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" />{" "}
-              Hairstyling
+              <Checkbox {...label} defaultChecked color="secondary" /> Soch
+              turmaklash
             </li>
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" /> Hair
-              Coloring
+              <Checkbox {...label} defaultChecked color="secondary" /> Sochni
+              bo'yash
             </li>
           </ul>
           <ul>
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" /> Shave
-              Mustache
+              <Checkbox {...label} defaultChecked color="secondary" /> Mo'ylovni
+              tarash
             </li>
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" /> Shave the
-              Beard
+              <Checkbox {...label} defaultChecked color="secondary" />
+              Soqolni tarash
             </li>
             <li>
-              <Checkbox {...label} defaultChecked color="secondary" /> Facial
+              <Checkbox {...label} defaultChecked color="secondary" /> Yuz
             </li>
           </ul>
         </div>
@@ -103,7 +97,7 @@ export default function PacageProfel() {
             type="Submit"
             className="bg-[#FB9400] w-full mt-5 text-center rounded-3xl text-white text-xl py-2 hover:scale-105 duration-300"
           >
-            Book Now - $125
+            Hozir band qilish - $125
           </Link>
         </div>
       </Paper>

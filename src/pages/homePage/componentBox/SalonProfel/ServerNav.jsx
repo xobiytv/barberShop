@@ -22,7 +22,7 @@ export default function ProfelNav() {
             type="Submit"
             className="bg-[#FB9400] w-full mt-5 text-center rounded-3xl text-white text-xl py-2 hover:scale-105 duration-300"
           >
-            Apply
+            Murojat qilish
           </Link>
         </div>
       </Paper>

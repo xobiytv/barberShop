@@ -7,12 +7,6 @@ import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { StaticDatePicker } from "@mui/x-date-pickers/StaticDatePicker";
-// import Box from "@mui/material/Box";
-// import BottomNavigation from "@mui/material/BottomNavigation";
-// import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-// import RestoreIcon from "@mui/icons-material/Restore";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
@@ -38,32 +32,19 @@ export default function BookApply() {
       </div>
       <div className="m-5">
         <div>
-          <b className="text-xl">Select Data</b>
+          <b className="text-xl">O'zingizga mos kunni tanlang</b>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <StaticDatePicker minDate={middleDate} />
           </LocalizationProvider>
         </div>
         <div className="flex justify-between ">
-          <b className="text-xl">Select Hours</b>
+          <b className="text-xl">O'zingizga mos vaqtni tanlang</b>
 
-          <Link to={"/logUp"} className=" text-[#FB9400] ">
-            <b>See All</b>
+          <Link className=" text-[#FB9400] ">
+            <b>Umummiy</b>
           </Link>
         </div>
-        {/* <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        >
-          <BottomNavigationAction label="9:00" />
-          <BottomNavigationAction label="10:00" />
-          <BottomNavigationAction label="11:00" />
-          <BottomNavigationAction label="12:00" />
-          <BottomNavigationAction label="13:00" />
-          <BottomNavigationAction label="14:00" />
-        </BottomNavigation> */}
+
         <Box sx={{ width: "100%" }}>
           <Tabs
             value={value}
@@ -85,10 +66,10 @@ export default function BookApply() {
 
         <div className="">
           <div className="flex justify-between mb-5">
-            <b className="text-xl">Select Specialist</b>
+            <b className="text-xl">Barcha masterlar</b>
 
             <Link to={"/logUp"} className=" text-[#FB9400] ">
-              <b>See All</b>
+              <b>Umummiy</b>
             </Link>
           </div>
 
@@ -152,7 +133,7 @@ export default function BookApply() {
             type="Submit"
             className="bg-[#FB9400] w-full mt-5 text-center rounded-3xl text-white text-xl py-2 hover:scale-105 duration-300"
           >
-            Continue
+            Davom etish
           </Link>
         </div>
       </Paper>
