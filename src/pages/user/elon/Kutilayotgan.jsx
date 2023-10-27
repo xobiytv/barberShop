@@ -108,7 +108,7 @@ export default function Kutilayotgan() {
               <hr className="m-3" />
               <div className="flex justify-between">
                 <div className="rounded-3xl border-2 border-[#fb0000] bg-none p-4 pb-2 pt-2 text-[#fb0000] hover:scale-105 duration-300">
-                  <Link
+                  <Link                            
                     to={"/chake"}
                     variant="primary"
                     type="Submit"

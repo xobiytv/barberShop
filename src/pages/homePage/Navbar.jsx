@@ -30,22 +30,14 @@ export default function Navbars() {
     <Box sx={{ flexGrow: 1 }} color="none">
       <AppBar position="static">
         <Toolbar className="bg-[#FB9400]">
-          {/* <IconButton
-            size="large"
-            aria-label="show 17 new notifications"
-            color="inherit"
-          >
-            <Badge color="error">
-              <ExitToAppIcon />
-            </Badge>
-          </IconButton> */}
+         
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { sm: "block" } }}
           >
-            MUI
+            BT
           </Typography>
           {/* xs: "none" */}
           <Box sx={{ flexGrow: 1 }} />
@@ -59,9 +51,7 @@ export default function Navbars() {
               <Link to={"/sigin"}>
                 <ExitToAppIcon />
               </Link>
-              {/* <Badge onClick={handleSignOut} color="error">
-                
-              </Badge> */}
+              
             </IconButton>
             <IconButton
               size="large"

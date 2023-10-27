@@ -17,7 +17,7 @@ export default function Footer() {
   }
   return (
     <Paper
-      sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+      sx={{margin: 0, position: "fixed", bottom: 0, left: 0, right: 0 }}
       elevation={3}
     >
       <div className="w-full flex justify-center gap-10 ml-0 m-3">
@@ -37,41 +37,7 @@ export default function Footer() {
           <PersonIcon sx={{ fontSize: 25, color: "#FB9400 " }} />
         </Link>
       </div> 
-      {/* <BottomNavigation
-        sx={{ width: "100%" }}
-        // value={value}
-        onChange={handleChange}
-      >
-        <BottomNavigationAction
-          label="Home"
-          value="home"
-          href="/"
-          icon={<HomeIcon />}
-        />
-        <BottomNavigationAction
-          label="Explore"
-          value="explore"
-          // href="/home"
-          icon={<LocationOnIcon />}
-        />
-        <BottomNavigationAction
-          href="/mybookmark"
-          label=" Booking"
-          value="mybooking"
-          icon={<LibraryBooksIcon />}
-        />
-        <BottomNavigationAction
-          label="Inbox"
-          // value="inbox"
-          icon={<MessageIcon />}
-        />
-        <BottomNavigationAction
-          label="Profile"
-          value="profile"
-          href="/profel"
-          icon={<PersonIcon />}
-        />
-      </BottomNavigation> */}
+      
     </Paper>
   );
 }
